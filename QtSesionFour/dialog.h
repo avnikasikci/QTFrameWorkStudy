@@ -24,6 +24,12 @@ private slots:
 
     QString get_chosen(QObject* obj);
 
+    void on_checkBoxGear_stateChanged(int arg1);
+
+    void on_checkBoxFuel_stateChanged(int arg1);
+
+    void on_checkBoxAge_stateChanged(int arg1);
+
 private:
     Ui::Dialog *ui;
 };

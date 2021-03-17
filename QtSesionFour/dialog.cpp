@@ -10,6 +10,9 @@ Dialog::Dialog(QWidget *parent)
     , ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+    ui->grpGear->hide();//form load edilirken hide edilmesi gereken groupboxları code belirliyorum
+    ui->grpfuel->hide();
+    ui->grpAge->hide();
 }
 
 Dialog::~Dialog()
@@ -28,7 +31,13 @@ void Dialog::on_btnClear_clicked()
     {
         qDebug()<< my_str;
     }
+    //Form Nesnelerini Temizle tek tek yapmadan tüm form elementlerini nasıl temizleyebiliriz araştırılacak...
+    /*
+    QObjectList AllObjectList=this->children();
+    foreach(QObject _ChildObj , AllObjectList){
 
+    }
+*/
     reject();
 
 }
@@ -56,9 +65,12 @@ void Dialog::on_btnList_clicked() //Secimleri bir str de tutcaz ekrana bascaz
 
 void Dialog::on_btnShowChilderenChose_clicked()
 {
- QString vites=get_chosen(ui->grpVites);
- QString yakit=get_chosen(ui->grpYakit);
- QString _childerenChosen="Vites:"+vites+"\r\n"+" Yakit :"+yakit+"\r\n";
+ QString gear=get_chosen(ui->grpGear);
+ QString fuel=get_chosen(ui->grpfuel);
+ QString age=get_chosen(ui->grpAge);
+
+ QString _childerenChosen="Vites:"+gear+"\r\n"+" Yakit :"+fuel+"\r\n Yaş :"+age+"\r\n";
+
  QMessageBox::information(this,"Secimleriniz",_childerenChosen);
 }
 
@@ -77,20 +89,20 @@ QString Dialog::get_chosen(QObject* obj)
     return value;
 }
 
+void Dialog::on_checkBoxGear_stateChanged(int arg1)
+{
+//Check active arg1 = 2 deactive arg1=0;
+    ui->checkBoxGear->isChecked() ?  ui->grpGear->show():ui->grpGear->hide();
 
+}
 
+void Dialog::on_checkBoxFuel_stateChanged(int arg1)
+{
+ui->checkBoxFuel->isChecked() ?  ui->grpfuel->show():ui->grpfuel->hide();
+}
 
+void Dialog::on_checkBoxAge_stateChanged(int arg1)
+{
+    ui->checkBoxAge->isChecked() ?  ui->grpAge->show():ui->grpAge->hide();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
