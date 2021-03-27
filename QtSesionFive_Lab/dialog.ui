@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>344</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="lblRenk">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>30</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Yazı Biçimlendirme Arayüzü</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxBold">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>250</y>
+     <width>78</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxItalic">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>250</y>
+     <width>78</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Italik</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonMake">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>290</y>
+     <width>80</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Uygula</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblShow">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>170</y>
+     <width>201</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxLineType">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>120</y>
+     <width>191</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>MS Shell Dlg 2</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>230</width>
+     <height>117</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFontComboBox" name="fontComboBox"/>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="spinBoxLineSize">
+      <property name="minimum">
+       <number>5</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboBoxLineColor">
+      <item>
+       <property name="text">
+        <string>red</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>green</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>yellow</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>black</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>test</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEditInput"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>141</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="lblRenk_2">
+      <property name="text">
+       <string>Yazı Tip</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblRenk_3">
+      <property name="text">
+       <string>Yazı Tipi Büyüklüğü</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblRenk_4">
+      <property name="text">
+       <string>Renk</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblRenk_5">
+      <property name="text">
+       <string>Yazı Griniz</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>pushButtonMake</zorder>
+  <zorder>lblRenk</zorder>
+  <zorder>lblRenk_2</zorder>
+  <zorder>lblRenk_3</zorder>
+  <zorder>lblRenk_4</zorder>
+  <zorder>checkBoxBold</zorder>
+  <zorder>checkBoxItalic</zorder>
+  <zorder>lblShow</zorder>
+  <zorder>comboBoxLineType</zorder>
+  <zorder>spinBoxLineSize</zorder>
+  <zorder>comboBoxLineColor</zorder>
+  <zorder>fontComboBox</zorder>
+  <zorder>comboBoxLineType</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
