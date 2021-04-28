@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/sozlesme">
+        <file>metinFile/sozlesme.txt</file>
+    </qresource>
+</RCC>
