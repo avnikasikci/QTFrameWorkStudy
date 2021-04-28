@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/file">
+        <file>images/Ac.png</file>
+        <file>images/connect_icon.jpg</file>
+        <file>images/disconnect_icon.jpg</file>
+        <file>images/ekle.png</file>
+        <file>images/farkliKaydet.jpg</file>
+        <file>images/geri.png</file>
+        <file>images/ikonlar.qrc</file>
+        <file>images/ileri.png</file>
+        <file>images/Kaydet.jpg</file>
+        <file>images/kopyala.png</file>
+        <file>images/sil.png</file>
+        <file>images/yapistir.png</file>
+        <file>images/yeni.png</file>
+    </qresource>
+</RCC>

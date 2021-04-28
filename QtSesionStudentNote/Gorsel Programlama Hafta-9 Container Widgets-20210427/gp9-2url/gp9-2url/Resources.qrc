@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/files">
+        <file>resimler/Globe-icon.png</file>
+        <file>resimler/page.png</file>
+        <file>resimler/page2.png</file>
+    </qresource>
+</RCC>
